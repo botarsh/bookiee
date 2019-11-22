@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8">
+    <title>SKYEXCHANGE</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <h1>SKYeXCHANGE</h1>
+        </div>
+        
+        <div class="acc-div">
+            <button class="acc-btn">
+            <i class="fas fa-user"></i>
+            My Account
+            <i class="fa fa-caret-down"></i>
+            </button>
+        </div>
+    </header>
+    
+    <nav>
+       <div class="nav-items">
+            <a href="#">Home</a>
+            <a href="#">In-Play</a>
+            <a href="#">Cricket</a>
+            <a href="#">Tennis</a>
+            <a href="#">Soccer</a>
+        </div>
+       
+        <div class="nav-set-btn">
+            <a href="#">
+            Setting 
+            <i class="fas fa-cog fa-spin"></i>
+            </a>
+        </div>
+        
+    </nav>
+    
+    <section>
+        <div class="left">
+            <div class="top">
+               <div class="dots"></div>
+                Sports
+            </div>
+            
+            <div class="left-cricket">
+                <a href="#" >Cricket
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            
+            <div class="left-tennis">
+                <a href="#">Tennis
+                   <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            
+            <div class="left-soccer">
+                <a href="#">Soccer
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>  
+        </div>
+        
+        <div class="center">
+           <div class="center-top">
+               <marquee direction="rtl">New Sessions coming soon</marquee>
+           </div>
+           
+           <div class="slider">
+            
+               <div class="mySlides">
+                  <img src="#" style="width:100%; height: 220px;">
+               </div>
+
+               <div class="mySlides ">
+                  <img src="#" style="width:100%; height: 220px;">
+               </div>
+
+               <div class="mySlides">
+                 <img src="#" style="width:100%; height: 220px;">
+               </div>
+
+                   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+               </div>
+
+               <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+               </div>
+
+    
+          
+           
+           <div>
+               <div class="highlight">
+                  Highlights
+                  <div class="links">
+                      <a href="#first-div" onclick="show1()" >Cricket</a>
+                       <a href="#second-div" onclick="show2()">Tennis</a>
+                       <a href="#third-div" onclick="show3()">Soccer</a>
+                  </div>
+                </div>
+                  
+                <div class="main"> 
+                    <div class="blank">cshv</div>
+                   <div id="first-div" >
+                      <div  class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                      <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                      
+                   </div>
+                   
+                   <div id="second-div" class="none">
+                       <div  class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                      <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                       <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                   </div>
+                    
+                    <div id="third-div" class="none">
+                         <div  class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                         <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                         <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                         <div class="spans"><a href="#">one nsycg h cjsdycbbbuygv byvy</a></div>
+                    </div>
+                    
+                </div>
+                   
+           </div>
+           
+        </div>
+        
+        <div class="right">
+            <div class="right-top">
+                Bet Slip
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        
+        function show2(){
+            document.getElementById("second-div").style.display="block";
+             document.getElementById("third-div").style.display="none";
+             document.getElementById("first-div").style.display="none";
+        }
+        
+        function show3(){
+            document.getElementById("third-div").style.display="block";
+            document.getElementById("second-div").style.display="none";
+             document.getElementById("first-div").style.display="none";
+        }
+        
+        $(document).on('click', '.links a', function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        
+        
+        
+        
+        var slideIndex = 1;
+            showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+    </script>
+    
+</body>
+</html>
